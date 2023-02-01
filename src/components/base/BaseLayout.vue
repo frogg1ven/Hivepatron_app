@@ -1,76 +1,60 @@
 <template>
   <ion-page>
-    <ion-header :translucent="true">
-      <ion-toolbar>
-        <ion-menu-button slot="start"></ion-menu-button>
+    <ion-header :translucent="true"  class="ion-no-border">
+      <ion-toolbar translucent>
+        <ion-menu-button style="position: absolute; right: 0;" slot="end" @click="openMenu()" class="menuButton">
+        </ion-menu-button>
         <ion-title>{{ pageTitle }}</ion-title>
       </ion-toolbar>
     </ion-header>
 
     <ion-content :fullscreen="true">
-      <ion-menu side="start" menu-id="first" content-id="main">
-        <ion-header>
-          <ion-toolbar color="primary">
-            <ion-title>Start Menu</ion-title>
-          </ion-toolbar>
-        </ion-header>
-        <ion-content>
-          <ion-list>
-            <ion-item>Strona główna</ion-item>
-            <ion-item>Ul numer 1</ion-item>
-            <ion-item>Powiadomienia</ion-item>
-            <ion-item>Ustawienia</ion-item>
-            <ion-item>Wyloguj</ion-item>
-          </ion-list>
-        </ion-content>
-      </ion-menu>
 
       <slot />
 
-      <ion-router-outlet id="main"></ion-router-outlet>
     </ion-content>
   </ion-page>
 </template>
 
-<style>
-ion-menu-button {
-  --color: "dark";
-}
-</style>
-
 <script>
 import {
-  IonMenuButton,
+  IonPage,
   IonContent,
   IonHeader,
-  IonItem,
-  IonList,
-  IonMenu,
-  IonRouterOutlet,
   IonTitle,
   IonToolbar,
   menuController,
+  IonMenuButton
+  
 } from "@ionic/vue";
-import { defineComponent } from "vue";
 
-export default defineComponent({
+import {
+  menu
+} from "ionicons/icons";
+
+export default {
   props: ["pageTitle"],
+
   components: {
-    IonMenuButton,
+    IonPage,
     IonContent,
     IonHeader,
-    IonItem,
-    IonList,
-    IonMenu,
-    IonRouterOutlet,
     IonTitle,
     IonToolbar,
+    IonMenuButton
   },
+
   methods: {
-    openFirst() {
-      menuController.enable(true, "first");
-      menuController.open("first");
-    },
+    openMenu() {
+      menuController.open("app-menu")
+    }
   },
-});
+
+  setup() {
+    return {
+      menu,
+    };
+  },
+
+};
 </script>

@@ -1,0 +1,244 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.myionicapp.demo.app"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\Projekty\Hive Patron\hive-patron\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->D:\Projekty\Hive Patron\hive-patron\android\app\src\main\AndroidManifest.xml
+10
+11    <!-- Permissions -->
+12
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->D:\Projekty\Hive Patron\hive-patron\android\app\src\main\AndroidManifest.xml:41:5-67
+13-->D:\Projekty\Hive Patron\hive-patron\android\app\src\main\AndroidManifest.xml:41:22-64
+14    <uses-permission android:name="android.permission.VIBRATE" />
+14-->[:capacitor-haptics] D:\Projekty\Hive Patron\hive-patron\node_modules\@capacitor\haptics\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-66
+14-->[:capacitor-haptics] D:\Projekty\Hive Patron\hive-patron\node_modules\@capacitor\haptics\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-63
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\Frogg1ven\.gradle\caches\transforms-3\41c278d94ea1a2af5064de343b5f03b1\transformed\jetified-firebase-iid-21.0.1\AndroidManifest.xml:22:5-79
+15-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\Frogg1ven\.gradle\caches\transforms-3\41c278d94ea1a2af5064de343b5f03b1\transformed\jetified-firebase-iid-21.0.1\AndroidManifest.xml:22:22-76
+16    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+16-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\Frogg1ven\.gradle\caches\transforms-3\41c278d94ea1a2af5064de343b5f03b1\transformed\jetified-firebase-iid-21.0.1\AndroidManifest.xml:24:5-68
+16-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\Frogg1ven\.gradle\caches\transforms-3\41c278d94ea1a2af5064de343b5f03b1\transformed\jetified-firebase-iid-21.0.1\AndroidManifest.xml:24:22-65
+17    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+17-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\Frogg1ven\.gradle\caches\transforms-3\41c278d94ea1a2af5064de343b5f03b1\transformed\jetified-firebase-iid-21.0.1\AndroidManifest.xml:26:5-82
+17-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\Frogg1ven\.gradle\caches\transforms-3\41c278d94ea1a2af5064de343b5f03b1\transformed\jetified-firebase-iid-21.0.1\AndroidManifest.xml:26:22-79
+18
+19    <application
+19-->D:\Projekty\Hive Patron\hive-patron\android\app\src\main\AndroidManifest.xml:5:5-37:19
+20        android:allowBackup="true"
+20-->D:\Projekty\Hive Patron\hive-patron\android\app\src\main\AndroidManifest.xml:6:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.3.2] C:\Users\Frogg1ven\.gradle\caches\transforms-3\2affdb6e6a1314389bbf6c67f425b6c6\transformed\core-1.3.2\AndroidManifest.xml:24:18-86
+22        android:debuggable="true"
+23        android:icon="@drawable/logo"
+23-->D:\Projekty\Hive Patron\hive-patron\android\app\src\main\AndroidManifest.xml:7:9-38
+24        android:label="@string/app_name"
+24-->D:\Projekty\Hive Patron\hive-patron\android\app\src\main\AndroidManifest.xml:8:9-41
+25        android:roundIcon="@drawable/logo"
+25-->D:\Projekty\Hive Patron\hive-patron\android\app\src\main\AndroidManifest.xml:9:9-43
+26        android:supportsRtl="true"
+26-->D:\Projekty\Hive Patron\hive-patron\android\app\src\main\AndroidManifest.xml:10:9-35
+27        android:testOnly="true"
+28        android:theme="@style/AppTheme"
+28-->D:\Projekty\Hive Patron\hive-patron\android\app\src\main\AndroidManifest.xml:11:9-40
+29        android:usesCleartextTraffic="true" >
+29-->D:\Projekty\Hive Patron\hive-patron\android\app\src\main\AndroidManifest.xml:12:9-44
+30        <activity
+30-->D:\Projekty\Hive Patron\hive-patron\android\app\src\main\AndroidManifest.xml:14:9-26:20
+31            android:name="com.myionicapp.demo.app.MainActivity"
+31-->D:\Projekty\Hive Patron\hive-patron\android\app\src\main\AndroidManifest.xml:16:13-64
+32            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|smallestScreenSize|screenLayout|uiMode"
+32-->D:\Projekty\Hive Patron\hive-patron\android\app\src\main\AndroidManifest.xml:15:13-129
+33            android:label="@string/title_activity_main"
+33-->D:\Projekty\Hive Patron\hive-patron\android\app\src\main\AndroidManifest.xml:17:13-56
+34            android:launchMode="singleTask"
+34-->D:\Projekty\Hive Patron\hive-patron\android\app\src\main\AndroidManifest.xml:19:13-44
+35            android:theme="@style/AppTheme.NoActionBarLaunch" >
+35-->D:\Projekty\Hive Patron\hive-patron\android\app\src\main\AndroidManifest.xml:18:13-62
+36            <intent-filter>
+36-->D:\Projekty\Hive Patron\hive-patron\android\app\src\main\AndroidManifest.xml:21:13-24:29
+37                <action android:name="android.intent.action.MAIN" />
+37-->D:\Projekty\Hive Patron\hive-patron\android\app\src\main\AndroidManifest.xml:22:17-69
+37-->D:\Projekty\Hive Patron\hive-patron\android\app\src\main\AndroidManifest.xml:22:25-66
+38
+39                <category android:name="android.intent.category.LAUNCHER" />
+39-->D:\Projekty\Hive Patron\hive-patron\android\app\src\main\AndroidManifest.xml:23:17-77
+39-->D:\Projekty\Hive Patron\hive-patron\android\app\src\main\AndroidManifest.xml:23:27-74
+40            </intent-filter>
+41        </activity>
+42
+43        <provider
+44            android:name="androidx.core.content.FileProvider"
+44-->D:\Projekty\Hive Patron\hive-patron\android\app\src\main\AndroidManifest.xml:29:13-62
+45            android:authorities="com.myionicapp.demo.app.fileprovider"
+45-->D:\Projekty\Hive Patron\hive-patron\android\app\src\main\AndroidManifest.xml:30:13-64
+46            android:exported="false"
+46-->D:\Projekty\Hive Patron\hive-patron\android\app\src\main\AndroidManifest.xml:31:13-37
+47            android:grantUriPermissions="true" >
+47-->D:\Projekty\Hive Patron\hive-patron\android\app\src\main\AndroidManifest.xml:32:13-47
+48            <meta-data
+48-->D:\Projekty\Hive Patron\hive-patron\android\app\src\main\AndroidManifest.xml:33:13-35:64
+49                android:name="android.support.FILE_PROVIDER_PATHS"
+49-->D:\Projekty\Hive Patron\hive-patron\android\app\src\main\AndroidManifest.xml:34:17-67
+50                android:resource="@xml/file_paths" />
+50-->D:\Projekty\Hive Patron\hive-patron\android\app\src\main\AndroidManifest.xml:35:17-51
+51        </provider>
+52
+53        <service
+53-->[:capacitor-push-notifications] D:\Projekty\Hive Patron\hive-patron\node_modules\@capacitor\push-notifications\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-16:19
+54            android:name="com.capacitorjs.plugins.pushnotifications.MessagingService"
+54-->[:capacitor-push-notifications] D:\Projekty\Hive Patron\hive-patron\node_modules\@capacitor\push-notifications\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-86
+55            android:exported="false" >
+55-->[:capacitor-push-notifications] D:\Projekty\Hive Patron\hive-patron\node_modules\@capacitor\push-notifications\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-37
+56            <intent-filter>
+56-->[:capacitor-push-notifications] D:\Projekty\Hive Patron\hive-patron\node_modules\@capacitor\push-notifications\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-15:29
+57                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+57-->[:capacitor-push-notifications] D:\Projekty\Hive Patron\hive-patron\node_modules\@capacitor\push-notifications\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:17-78
+57-->[:capacitor-push-notifications] D:\Projekty\Hive Patron\hive-patron\node_modules\@capacitor\push-notifications\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:25-75
+58            </intent-filter>
+59        </service>
+60        <!--
+61             FirebaseMessagingService performs security checks at runtime,
+62             but set to not exported to explicitly avoid allowing another app to call it.
+63        -->
+64        <service
+64-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\Frogg1ven\.gradle\caches\transforms-3\7afb71eebcfe76411f1c4e13cfaec350\transformed\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:28:9-35:19
+65            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+65-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\Frogg1ven\.gradle\caches\transforms-3\7afb71eebcfe76411f1c4e13cfaec350\transformed\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:29:13-82
+66            android:directBootAware="true"
+66-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\Frogg1ven\.gradle\caches\transforms-3\7afb71eebcfe76411f1c4e13cfaec350\transformed\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:30:13-43
+67            android:exported="false" >
+67-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\Frogg1ven\.gradle\caches\transforms-3\7afb71eebcfe76411f1c4e13cfaec350\transformed\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:31:13-37
+68            <intent-filter android:priority="-500" >
+68-->[:capacitor-push-notifications] D:\Projekty\Hive Patron\hive-patron\node_modules\@capacitor\push-notifications\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-15:29
+69                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+69-->[:capacitor-push-notifications] D:\Projekty\Hive Patron\hive-patron\node_modules\@capacitor\push-notifications\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:17-78
+69-->[:capacitor-push-notifications] D:\Projekty\Hive Patron\hive-patron\node_modules\@capacitor\push-notifications\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:25-75
+70            </intent-filter>
+71        </service>
+72        <service
+72-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\Frogg1ven\.gradle\caches\transforms-3\7afb71eebcfe76411f1c4e13cfaec350\transformed\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:36:9-42:19
+73            android:name="com.google.firebase.components.ComponentDiscoveryService"
+73-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\Frogg1ven\.gradle\caches\transforms-3\7afb71eebcfe76411f1c4e13cfaec350\transformed\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:37:13-84
+74            android:directBootAware="true"
+74-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Frogg1ven\.gradle\caches\transforms-3\712c7aeae3f284cbb994c60e98a27df9\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:35:13-43
+75            android:exported="false" >
+75-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\Frogg1ven\.gradle\caches\transforms-3\7afb71eebcfe76411f1c4e13cfaec350\transformed\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:38:13-37
+76            <meta-data
+76-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\Frogg1ven\.gradle\caches\transforms-3\7afb71eebcfe76411f1c4e13cfaec350\transformed\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:39:13-41:85
+77                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+77-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\Frogg1ven\.gradle\caches\transforms-3\7afb71eebcfe76411f1c4e13cfaec350\transformed\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:40:17-119
+78                android:value="com.google.firebase.components.ComponentRegistrar" />
+78-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\Frogg1ven\.gradle\caches\transforms-3\7afb71eebcfe76411f1c4e13cfaec350\transformed\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:41:17-82
+79            <meta-data
+79-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\Frogg1ven\.gradle\caches\transforms-3\41c278d94ea1a2af5064de343b5f03b1\transformed\jetified-firebase-iid-21.0.1\AndroidManifest.xml:32:13-34:85
+80                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+80-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\Frogg1ven\.gradle\caches\transforms-3\41c278d94ea1a2af5064de343b5f03b1\transformed\jetified-firebase-iid-21.0.1\AndroidManifest.xml:33:17-96
+81                android:value="com.google.firebase.components.ComponentRegistrar" />
+81-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\Frogg1ven\.gradle\caches\transforms-3\41c278d94ea1a2af5064de343b5f03b1\transformed\jetified-firebase-iid-21.0.1\AndroidManifest.xml:34:17-82
+82            <meta-data
+82-->[com.google.firebase:firebase-datatransport:17.0.10] C:\Users\Frogg1ven\.gradle\caches\transforms-3\01addb3125275544f7f5a502215cb381\transformed\jetified-firebase-datatransport-17.0.10\AndroidManifest.xml:28:13-30:85
+83                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+83-->[com.google.firebase:firebase-datatransport:17.0.10] C:\Users\Frogg1ven\.gradle\caches\transforms-3\01addb3125275544f7f5a502215cb381\transformed\jetified-firebase-datatransport-17.0.10\AndroidManifest.xml:29:17-115
+84                android:value="com.google.firebase.components.ComponentRegistrar" />
+84-->[com.google.firebase:firebase-datatransport:17.0.10] C:\Users\Frogg1ven\.gradle\caches\transforms-3\01addb3125275544f7f5a502215cb381\transformed\jetified-firebase-datatransport-17.0.10\AndroidManifest.xml:30:17-82
+85            <meta-data
+85-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\Frogg1ven\.gradle\caches\transforms-3\15d6d6041c88a31e8bd6c88ef61659fd\transformed\jetified-firebase-installations-16.3.5\AndroidManifest.xml:18:13-20:85
+86                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+86-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\Frogg1ven\.gradle\caches\transforms-3\15d6d6041c88a31e8bd6c88ef61659fd\transformed\jetified-firebase-installations-16.3.5\AndroidManifest.xml:19:17-127
+87                android:value="com.google.firebase.components.ComponentRegistrar" />
+87-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\Frogg1ven\.gradle\caches\transforms-3\15d6d6041c88a31e8bd6c88ef61659fd\transformed\jetified-firebase-installations-16.3.5\AndroidManifest.xml:20:17-82
+88            <!--
+89                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
+90                clients to use it as well, by defining this registrar in their own core/common library.
+91            -->
+92            <meta-data
+92-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Frogg1ven\.gradle\caches\transforms-3\712c7aeae3f284cbb994c60e98a27df9\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:43:13-45:85
+93                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
+93-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Frogg1ven\.gradle\caches\transforms-3\712c7aeae3f284cbb994c60e98a27df9\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:44:17-121
+94                android:value="com.google.firebase.components.ComponentRegistrar" />
+94-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Frogg1ven\.gradle\caches\transforms-3\712c7aeae3f284cbb994c60e98a27df9\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:45:17-82
+95        </service>
+96
+97        <receiver
+97-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\Frogg1ven\.gradle\caches\transforms-3\41c278d94ea1a2af5064de343b5f03b1\transformed\jetified-firebase-iid-21.0.1\AndroidManifest.xml:37:9-44:20
+98            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+98-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\Frogg1ven\.gradle\caches\transforms-3\41c278d94ea1a2af5064de343b5f03b1\transformed\jetified-firebase-iid-21.0.1\AndroidManifest.xml:38:13-78
+99            android:exported="true"
+99-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\Frogg1ven\.gradle\caches\transforms-3\41c278d94ea1a2af5064de343b5f03b1\transformed\jetified-firebase-iid-21.0.1\AndroidManifest.xml:39:13-36
+100            android:permission="com.google.android.c2dm.permission.SEND" >
+100-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\Frogg1ven\.gradle\caches\transforms-3\41c278d94ea1a2af5064de343b5f03b1\transformed\jetified-firebase-iid-21.0.1\AndroidManifest.xml:40:13-73
+101            <intent-filter>
+101-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\Frogg1ven\.gradle\caches\transforms-3\41c278d94ea1a2af5064de343b5f03b1\transformed\jetified-firebase-iid-21.0.1\AndroidManifest.xml:41:13-43:29
+102                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+102-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\Frogg1ven\.gradle\caches\transforms-3\41c278d94ea1a2af5064de343b5f03b1\transformed\jetified-firebase-iid-21.0.1\AndroidManifest.xml:42:17-81
+102-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\Frogg1ven\.gradle\caches\transforms-3\41c278d94ea1a2af5064de343b5f03b1\transformed\jetified-firebase-iid-21.0.1\AndroidManifest.xml:42:25-78
+103            </intent-filter>
+104        </receiver>
+105
+106        <provider
+106-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Frogg1ven\.gradle\caches\transforms-3\712c7aeae3f284cbb994c60e98a27df9\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:26:9-31:39
+107            android:name="com.google.firebase.provider.FirebaseInitProvider"
+107-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Frogg1ven\.gradle\caches\transforms-3\712c7aeae3f284cbb994c60e98a27df9\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:27:13-77
+108            android:authorities="com.myionicapp.demo.app.firebaseinitprovider"
+108-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Frogg1ven\.gradle\caches\transforms-3\712c7aeae3f284cbb994c60e98a27df9\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:28:13-72
+109            android:directBootAware="true"
+109-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Frogg1ven\.gradle\caches\transforms-3\712c7aeae3f284cbb994c60e98a27df9\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:29:13-43
+110            android:exported="false"
+110-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Frogg1ven\.gradle\caches\transforms-3\712c7aeae3f284cbb994c60e98a27df9\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:30:13-37
+111            android:initOrder="100" />
+111-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Frogg1ven\.gradle\caches\transforms-3\712c7aeae3f284cbb994c60e98a27df9\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:31:13-36
+112
+113        <activity
+113-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Frogg1ven\.gradle\caches\transforms-3\b68c47cc9fdbe88caa3cbc99e8ae2d16\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+114            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+114-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Frogg1ven\.gradle\caches\transforms-3\b68c47cc9fdbe88caa3cbc99e8ae2d16\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+115            android:exported="false"
+115-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Frogg1ven\.gradle\caches\transforms-3\b68c47cc9fdbe88caa3cbc99e8ae2d16\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+116            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+116-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Frogg1ven\.gradle\caches\transforms-3\b68c47cc9fdbe88caa3cbc99e8ae2d16\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+117
+118        <meta-data
+118-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Frogg1ven\.gradle\caches\transforms-3\66240fe47ac1471b5f694bb5fe7acad1\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+119            android:name="com.google.android.gms.version"
+119-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Frogg1ven\.gradle\caches\transforms-3\66240fe47ac1471b5f694bb5fe7acad1\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+120            android:value="@integer/google_play_services_version" />
+120-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Frogg1ven\.gradle\caches\transforms-3\66240fe47ac1471b5f694bb5fe7acad1\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+121
+122        <service
+122-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\Frogg1ven\.gradle\caches\transforms-3\582b5374c0ed98c6161922825b679ec0\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
+123            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+123-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\Frogg1ven\.gradle\caches\transforms-3\582b5374c0ed98c6161922825b679ec0\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
+124            android:exported="false" >
+124-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\Frogg1ven\.gradle\caches\transforms-3\582b5374c0ed98c6161922825b679ec0\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
+125            <meta-data
+125-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\Frogg1ven\.gradle\caches\transforms-3\582b5374c0ed98c6161922825b679ec0\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
+126                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+126-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\Frogg1ven\.gradle\caches\transforms-3\582b5374c0ed98c6161922825b679ec0\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
+127                android:value="cct" />
+127-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\Frogg1ven\.gradle\caches\transforms-3\582b5374c0ed98c6161922825b679ec0\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
+128        </service>
+129        <service
+129-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\Frogg1ven\.gradle\caches\transforms-3\403ccf5ec6d7b7d34f595b5104080949\transformed\jetified-transport-runtime-2.2.5\AndroidManifest.xml:26:9-30:19
+130            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+130-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\Frogg1ven\.gradle\caches\transforms-3\403ccf5ec6d7b7d34f595b5104080949\transformed\jetified-transport-runtime-2.2.5\AndroidManifest.xml:27:13-117
+131            android:exported="false"
+131-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\Frogg1ven\.gradle\caches\transforms-3\403ccf5ec6d7b7d34f595b5104080949\transformed\jetified-transport-runtime-2.2.5\AndroidManifest.xml:28:13-37
+132            android:permission="android.permission.BIND_JOB_SERVICE" >
+132-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\Frogg1ven\.gradle\caches\transforms-3\403ccf5ec6d7b7d34f595b5104080949\transformed\jetified-transport-runtime-2.2.5\AndroidManifest.xml:29:13-69
+133        </service>
+134
+135        <receiver
+135-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\Frogg1ven\.gradle\caches\transforms-3\403ccf5ec6d7b7d34f595b5104080949\transformed\jetified-transport-runtime-2.2.5\AndroidManifest.xml:32:9-34:40
+136            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+136-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\Frogg1ven\.gradle\caches\transforms-3\403ccf5ec6d7b7d34f595b5104080949\transformed\jetified-transport-runtime-2.2.5\AndroidManifest.xml:33:13-132
+137            android:exported="false" />
+137-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\Frogg1ven\.gradle\caches\transforms-3\403ccf5ec6d7b7d34f595b5104080949\transformed\jetified-transport-runtime-2.2.5\AndroidManifest.xml:34:13-37
+138    </application>
+139
+140</manifest>

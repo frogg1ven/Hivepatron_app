@@ -1,0 +1,4 @@
+com/myionicapp/demo/app/BuildConfig.java
+ com.myionicapp.demo.app.BuildConfig
+com/myionicapp/demo/app/MainActivity.java
+ com.myionicapp.demo.app.MainActivity

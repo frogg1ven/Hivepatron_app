@@ -1,0 +1,1 @@
+com.myionicapp.demo.app

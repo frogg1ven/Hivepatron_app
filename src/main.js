@@ -2,7 +2,9 @@ import { createApp } from 'vue'
 
 import App from './App.vue'
 import BaseLayout from './components/base/BaseLayout.vue'
+import Menu from "./components/base/Menu.vue"
 import router from './router';
+import store from './store'
 
 import { IonicVue } from '@ionic/vue';
 
@@ -26,11 +28,28 @@ import '@ionic/vue/css/display.css';
 import './theme/variables.css';
 import './theme/core.css';
 
+/* Charts */
+import HighchartsVue from 'highcharts-vue'
+import Highcharts from "highcharts"
+import highchartsMore from 'highcharts/highcharts-more.js';
+import boost from "highcharts/modules/boost";
+
+import Vue3EasyDataTable from 'vue3-easy-data-table';
+import 'vue3-easy-data-table/dist/style.css';
+
+highchartsMore(Highcharts);
+boost(Highcharts);
+
 const app = createApp(App)
   .use(IonicVue)
-  .use(router);
+  .use(router)
+  .use(store);
+
+app.use(HighchartsVue);
 
 app.component('base-layout', BaseLayout);
+app.component('menu', Menu);
+app.component('EasyDataTable', Vue3EasyDataTable);
   
 router.isReady().then(() => {
   app.mount('#app');
